@@ -213,7 +213,7 @@ rule Nm_finder:
 		config["results_dir"] + "/pre.Nm_sites.xls"
 	shell:
 		"""
-		Rscript DEseq2.reads_end.r {input.matrixs} {input.group} {output}
+		Rscript scripts/DEseq2.reads_end.r {input.matrixs} {input.group} {output}
 		"""
 
 #-------------------------------------------------------------------------------
